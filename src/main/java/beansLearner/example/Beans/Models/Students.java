@@ -4,7 +4,10 @@ import java.util.Iterator;
 import java.util.Spliterator;
 import java.util.function.Consumer;
 
-public class Students extends People<Student>{
+public class Students<studentType extends Student> extends People<Student>{
+    public Students(studentType... studentTypes){
+        super(studentTypes);
+    }
 
     @Override
     public Iterator<Student> iterator() {
