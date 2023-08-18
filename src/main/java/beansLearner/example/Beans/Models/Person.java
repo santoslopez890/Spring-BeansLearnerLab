@@ -2,7 +2,7 @@ package beansLearner.example.Beans.Models;
 
 import org.springframework.context.annotation.Bean;
 
-@Bean
+
 public class Person {
 
     final Long id;
