@@ -13,9 +13,8 @@ public class StudentConfigs {
 
         return new Students(new Student(8L,"Santos"));
     }
-    @Bean (name = "students")
+    @Bean(name = "previousStudents")
    public Students previousStudents(){
-
         return new Students(new Student(9L,"Bob Lee"));
     }
 

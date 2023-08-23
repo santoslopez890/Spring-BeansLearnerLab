@@ -37,4 +37,14 @@ public abstract class People <personType extends Person>implements Iterable<pers
     public List<personType> getPersonTypeList() {
         return personTypeList;
     }
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        for (personType pt: personTypeList){
+            sb.append(pt);
+        }
+        return sb.toString();
+    }
+
+
 }

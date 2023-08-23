@@ -1,6 +1,7 @@
 package beansLearner.example.Beans.Models;
 
 import java.util.Iterator;
+import java.util.List;
 import java.util.Spliterator;
 import java.util.function.Consumer;
 
@@ -22,5 +23,10 @@ public class Instructors <instructorType extends Instructor> extends People{
     @Override
     public Spliterator spliterator() {
         return super.spliterator();
+    }
+
+
+    public void lecture(List personTypeList, double numberOfHours) {
+
     }
 }

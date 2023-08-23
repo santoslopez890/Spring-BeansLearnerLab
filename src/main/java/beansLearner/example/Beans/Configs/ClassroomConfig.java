@@ -11,15 +11,15 @@ import org.springframework.context.annotation.DependsOn;
 @EnableAutoConfiguration
 @ComponentScan
 public class ClassroomConfig {
-    @Bean ("currentCohort")
+    @Bean (name="currentCohort")
     @DependsOn({"instructors", "students"})
     public Classroom currentCohort(Instructors instructors, Students students){
-        return new Classroom(new Instructors(new Instructor(1L,"Dolio")), new Students(new Student(3L,"Frank")));
+        return new Classroom(new Instructors(new Instructor(7L,"Dolio")), new Students(new Student(8L,"Santos")));
     }
-    @Bean ("previousCohort")
+    @Bean (name= "previousCohort")
     @DependsOn({"instructors", "students"})
     public Classroom previousCohort(Instructors instructors, Students students){
-        return new Classroom(new Instructors(new Instructor(2L,"fitzgerald")), new Students(new Student(4L,"Leon")));
+        return new Classroom(new Instructors(new Instructor(7L,"Dolio")), new Students(new Student(9L,"Bob Lee")));
     }
 
 
