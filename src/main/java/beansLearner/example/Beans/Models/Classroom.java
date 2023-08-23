@@ -12,4 +12,12 @@ public class Classroom {
     public void hostLecture(Teacher teacher, double numberOfHours){
     teacher.lecture(students.personTypeList,numberOfHours);
     }
+
+    public Object getInstructors() {
+        return instructors;
+    }
+
+    public Object getStudents() {
+        return students;
+    }
 }

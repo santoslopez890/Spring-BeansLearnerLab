@@ -20,7 +20,9 @@ public class InstructorConfig {
     }
     @Primary
     @Bean(name = "instructors")
-    public Instructors instructors(){
+    public Instructors getInstructors(){
         return new Instructors(new Instructor(7L,"Dolio"));
     }
+
+
 }
